@@ -1,0 +1,5 @@
+Lambda Funtion:
+  - When the trigger is detected, runs the code on the managed environment
+  - With severals triggers, Labda will scale the Function under 15 minutes
+AWS Lambda:
+  - Severless compute options to upload code to Lambda Function
