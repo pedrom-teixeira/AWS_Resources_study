@@ -1,0 +1,7 @@
+ECS (Elastic Container Service):
+  - Container orchestration (Docker)
+EKS(Elastic Kubernets Service):
+  - Container orchestration (Docker)
+
+AWS Fargate:
+  - Simple Container orchestration (Docker)
