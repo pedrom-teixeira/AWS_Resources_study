@@ -3,6 +3,7 @@ EC2 Definition/Introduction:
   - Stop or terminated instances are not paid
   - EC2 instances could be configurated as Windows or Linux operational systems
   - EC2 instances are resizeable (Vertical Scalling)
+  - For traditional applications, full access to OS
   
   
   EC2 Instances types and characteristic:
