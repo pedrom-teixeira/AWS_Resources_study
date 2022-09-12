@@ -1,0 +1,12 @@
+Elastic Beanstalk:
+  - Helps EC2 to build an environment and made it easily replicable 
+  - Need to provide the aplication code and desired configuration
+  - Not have to manage all separately
+  - Allows to focus on the business application, not on infrastructure
+  Adjust capacity
+  Load balancing
+  Automatic scaling
+  Application health monitoring
+  
+CloudFormation:
+  - Infrastructure as code
