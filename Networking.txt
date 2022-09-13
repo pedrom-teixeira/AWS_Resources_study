@@ -1,0 +1,11 @@
+VPC (Virtual Private Cloud):
+  - Private subnet
+  - Public subnet
+  - Allows to define private IP range for resources
+  - Subnet are chunks of IP adresses to group resources together
+  - Internet gateway is a door way, open to public
+  - Virtual private gateway only aprove network, not public 
+  - AWS direct connect is a complete private to connect a datacenter to AWS
+  - Network ACL allows or not the traffic through the subnets
+  - Security group runs below the Subnets and allows to group differents EC2 instances to recive each traffic
+  - Route 53 is a DNS scalable and avaliable (translate website name into IP or internet protocol) for websites
