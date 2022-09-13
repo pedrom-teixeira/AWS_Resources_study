@@ -1,0 +1,31 @@
+
+RDS (Relational Data Service):
+  - Supports severals engines (MySql, Oracle...)
+  - Amazon RDS is available on six database engines, which optimize for memory, performance, or input/output (I/O).
+  
+Aurora:
+  - Is an enterprise-class relational database
+  - Helps to reduce your database costs by reducing unnecessary input/output (I/O) operations
+
+Dynamo DB (Serverless):
+  - Dont need EC2 instances
+  - Tables is a place to store data
+  - Data are orgneized in itens e each item, have atributes. Atributes are differents filters on data
+  - Dont nedd to worry about scalling the system
+  - Redundantly
+  - No-Sql
+
+RedShift:
+  - Data wharehouse as a service
+  - Scalable
+  - Faster the traditional databases
+ 
+DMS (Database Migration Service):
+  - Migration existing database into AWS
+  -  Secure and easy
+  - The source and target do not have to be the same type
+  - On-premises, EC2, or RDS to EC2 or RDS
+  - Different types needs AWS Schema Converter
+
+DocumentDB:
+  - 
