@@ -1,0 +1,37 @@
+  - Do not use EC2 drives memory to data/files which need to be persist
+  
+EBS (Elastic Block Store):
+  - Virtual Hard drives (EBS volumes)
+  - Data persists between stops and stars EC2 instances
+  - Size, types and configuration
+  - Allow to create incremental backups (snapshots)
+  - Block storages breaks the file into blocks
+  - Allows to update only changes
+  - Attached to the EC2 instances
+  
+EFS (Elastic File System):
+  - Multiple instances accessing the data at same time
+  - Linux file system
+  - Stores data across multiple zones
+  - On Premises server can access via Direct Connect
+  
+
+S3:
+  - Unlimited amount of data
+  - Directories (buckets)
+  - Files (objects)
+  - Object size max 5TB
+  - Versioning objects
+  - Multiple buckets
+  - Permissions on tiers/class
+  - Do not need a EC2 instance
+  - Web enable
+  - Object storage use for any file like documents, videos, files, images...
+  
+  S3 Standard:
+    - Durability 99,99999999%
+    - S3 Static web site hosting, as a collection of HTML files
+    
+  S3 infrequenct access (S3 IA):
+    - Perfect to backups, recovery files for a long time
+    - S3 Glacier
