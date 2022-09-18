@@ -1,0 +1,15 @@
+CloudWatch: 
+  - CloudWatch alarm set a threshold for a metric to trigger an action
+  - Integrate with SNS, so send a SMS (integrate with severals resources)
+  - Cloudwatch dashboard displays all metric near real time to monitor them (centrallization metric)
+
+CloudTrail:
+  - It's an auditing tool
+  - Every request is logged in Cloudtrail
+  - Who, when, where and what response, what change, why request denied
+  - Save on secure S3 buckets, on vault lock
+
+Trusted advisor:
+  - Best practices tips like more efficient, more security or sove money
+  - Evaluate resources against cost optimization, performance, security, fault tolerance and service limits
+  - The recommendations it's shown on TAdvisor dashboard
