@@ -1,0 +1,27 @@
+  AWS CAF:
+    - Help to manage migration process. Advice the company to perform a quick and smooth migration to the AWS.
+    - Differents perspectives include Business, People, Governance, Platform, Security and  Operations
+    - It's needed to choose wich option among the six R's it's better for your application, based on time, cost, priority, criticaly.
+    
+    -Rehosting: the most simple way to migrate an application to AWS platform.
+    
+    -Replatforming: it's similar to hosting but, some optimizations it's made on migration process.
+    
+    -Retire: Turn off an application wich it's not usable anymore.
+    
+    -Retain: Temporaly its usable but, along the time it will be depreciated.
+    
+    -Repurchasing: When it's needed to abandon legacy software vendors.
+    
+    -Refactoring: Used when it's needed  to add new features or performace that might not be possible on premise
+    
+  AWS Snowcone: 
+    - Allow to transfer 8 tera-bits of date from on-primses application to AWS like on S3.
+    
+  AWS Snowball edge: 
+    - Power computing
+    - Runs AWS Lambda Functions
+    - AWS EC2 AMIs and IOT GressGrass
+  AWS Snowmobile:
+    - It's and system on a truck (literaly) wich is delivered to company and allow to perform lagest migrations. Houses 100 petabytes.
+    
