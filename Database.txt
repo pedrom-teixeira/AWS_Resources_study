@@ -3,7 +3,7 @@ RDS (Relational Data Service):
   - Supports severals engines (MySql, Oracle...)
   - Amazon RDS is available on six database engines, which optimize for memory, performance, or input/output (I/O).
   
-Aurora:
+Aurora Serverless:
   - Is an enterprise-class relational database
   - Helps to reduce your database costs by reducing unnecessary input/output (I/O) operations
 
