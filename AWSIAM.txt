@@ -1,0 +1,10 @@
+IAM:
+  - Cadastro de credenciais
+  - Chaves de gerenciamento para APIs AWS
+  - Gerenciador de senhas/complexidade
+  - Controle de autentificação MFA
+  
+  User: User wich access the AWS
+  Group: User may be included in group access
+  Role: Provides permition to AWS services and specific permitions for not users
+  Permitions: Provides specifc permitions to user
