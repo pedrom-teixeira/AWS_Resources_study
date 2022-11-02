@@ -1,0 +1,13 @@
+  Region: Espaço geografico macro onde ficam as availabilities zones
+  
+  Availability Zone: Group of datacentes in a region
+  
+  Edge locations: Small datacenters to allows low latency in specific services
+    - AWS CloudFront: Data cache, websites, CDN
+    - AWS Global Acelerator: Static IPs, high availability, global application
+    
+  Disaster recovey
+    - Backup and Restore: Run all application in one active infrastructure
+    - Pilot light: Run applications on a principal infra and maintain another deactivated infra
+    - Warm standby: Run applications on a principal infra and maintain another infra operating with low capacity
+    - Mult-site active: Runs application on two differents infra
