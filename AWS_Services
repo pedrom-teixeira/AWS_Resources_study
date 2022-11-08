@@ -5,6 +5,11 @@ EC2 Definition/Introduction:
   - EC2 instances are resizeable (Vertical Scalling)
   - For traditional applications, full access to OS
   
+EC2 Placement groups:
+  - Cluster: Closest instances -> low latency, high workload, HPC
+  - Partition: distribute instances by partitions, so that each partition do not share hardware -> distribuited workload, Hadoop, big data, kafka
+  - Spread: Spread the instances -> critic workload, fault reduction
+  
   
   EC2 Instances types and characteristic:
   - Instaces types are combined on severous CPU, memory, storage and network capacity
@@ -43,11 +48,30 @@ Elastic Beanstalk:
 CloudFormation:
   - Infrastructure as code
 -------------------------------------------------------------------------------------
-Lightsail: 
-  - 
+Lightsail: Virtual private service
+  - Easy to configure
+  - Useful to websites, business softwares, dev and tests environment
+  - It's a server for simple applications
+  - User friendly
  ------------------------------------------------------------------------------------- 
 ECS/EKS:
-  - 
+  - Containers orchertrations tool
+  - Useful for microservices, batch workloads, docker containers
+-------------------------------------------------------------------------------------
+Auto Scaling:
+  - Horizontal scaling
+  - Can be configured by Launch configuration (legado) ou Launch template
+  - High avaliability
+  - Span trhough avaliability zones
+  Scalling types:
+    - Manual
+    - Dynamic allows to scale using cloudwatch alarms trhough some rules
+    - Predictive Scaling use machine learning  to predict traffic
+    - Scheduled scaling
+
+
+
+
 -------------------------------------------------------------------------------------
 Lambda Funtion:
   - When the trigger is detected, runs the code on the managed environment
