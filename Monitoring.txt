@@ -8,6 +8,7 @@ CloudTrail:
   - Every request is logged in Cloudtrail
   - Who, when, where and what response, what change, why request denied
   - Save on secure S3 buckets, on vault lock
+  - Encripted by default
   https://d1.awsstatic.com/product-marketing/CloudTrail/Product-Page-Diagram-AWSX-CloudTrail_How-it-Works.d2f51f6e3ec3ea3b33d0c48d472f0e0b59b46e59.png
 
 Trusted advisor:
