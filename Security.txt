@@ -15,3 +15,11 @@
     - Is a web application firewall that lets you monitor the HTTP(S) requests that are forwarded to an Amazon CloudFront distribution, an Amazon API Gateway API, or an Application Load Balancer
     - It is not a free service
     
+  AWS Guard Duty:
+    - Its a threat detection that monitors suspect activity or unauthorized behavior to protect your AWS account
+    - This service is for AWS account level access, not for instance-level management like an EC2
+    
+  AWS Artifact:
+    - Provide Conformity report
+    - Different types of agreements are available in AWS Artifact Agreements to address the needs of customers subject to specific regulations.
+    
