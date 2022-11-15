@@ -6,6 +6,12 @@
     - (DDoS) protection service that safeguards applications running on AWS
     - Provides always-on detection and automatic inline mitigations that minimize application downtime and latency
     - All AWS customers benefit from the automatic protections of AWS Shield Standard, at no additional charge
-
+  
+  AWS Secrets Manager:
+    -  Helps you protect secrets needed to access your applications, services, and IT resources
+    -  Allows to manage, recover, change applications credentials and API keys.
     
+  AWS Web Application Firewall(WAF):
+    - Is a web application firewall that lets you monitor the HTTP(S) requests that are forwarded to an Amazon CloudFront distribution, an Amazon API Gateway API, or an Application Load Balancer
+    - It is not a free service
     
