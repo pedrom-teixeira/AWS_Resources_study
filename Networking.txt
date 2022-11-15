@@ -8,4 +8,8 @@ VPC (Virtual Private Cloud):
   - AWS direct connect is a complete private to connect a datacenter to AWS
   - Network ACL allows or not the traffic through the subnets
   - Security group runs below the Subnets and allows to group differents EC2 instances to recive each traffic
+  
+  
+AWS Route 53:
   - Route 53 is a DNS scalable and avaliable (translate website name into IP or internet protocol) for websites
+  - it is not a free service
