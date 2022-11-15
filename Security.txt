@@ -1,1 +1,11 @@
+  AWS Key Management Service(KMS):
+    - Allows to create and manage cryptographic keys and control their use across severals AWS services and applications
+    - Is a secure and resilient service that uses hardware security modules
+    
+  AWS Shield:
+    - (DDoS) protection service that safeguards applications running on AWS
+    - Provides always-on detection and automatic inline mitigations that minimize application downtime and latency
+    - All AWS customers benefit from the automatic protections of AWS Shield Standard, at no additional charge
 
+    
+    
