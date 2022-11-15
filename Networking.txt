@@ -12,4 +12,3 @@ VPC (Virtual Private Cloud):
   
 AWS Route 53:
   - Route 53 is a DNS scalable and avaliable (translate website name into IP or internet protocol) for websites
-  - it is not a free service
