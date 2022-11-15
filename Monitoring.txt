@@ -8,11 +8,15 @@ CloudTrail:
   - Every request is logged in Cloudtrail
   - Who, when, where and what response, what change, why request denied
   - Save on secure S3 buckets, on vault lock
+  https://d1.awsstatic.com/product-marketing/CloudTrail/Product-Page-Diagram-AWSX-CloudTrail_How-it-Works.d2f51f6e3ec3ea3b33d0c48d472f0e0b59b46e59.png
 
 Trusted advisor:
   - Best practices tips like more efficient, more security or sove money
-  - Evaluate resources against cost optimization, performance, security, fault tolerance and service limits
+  - Evaluate resources online against cost optimization, performance, security, fault tolerance and service limits
   - The recommendations it's shown on TAdvisor dashboard
 
 AWS Config:
   - Hitorico de configurações e mudaças de configurações
+  - Continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations.
+  https://d1.awsstatic.com/Products/product-name/diagrams/product-page-diagram-Config_how-it-works.bd28728a9066c55d7ee69c0a655109001462e25b.png
+  
