@@ -95,3 +95,10 @@ AWS EMR:
  - Cloud big data platform for processing vast amounts of data using open source tools such as Hadoop, 
  Apache Spark, Apache Hive, Apache HBase, Apache Flink, Apache Hudi, and Presto.
  -  Amazon EMR can be used to provision resources to run big data workloads on Hadoop clusters
+ 
+ 
+AWS Pinpoint:
+ - Helps marketers and developers to deliver customer-centric engagement experiences by capturing customer usage data to draw real-time insights.
+ - Based on customer real-time data historic, create and send campaign and journey to audience
+ - Schedule immediately or triggered messages based on real time events
+ - Integrated with AWS Kinesis, send data to other services for later analisys
