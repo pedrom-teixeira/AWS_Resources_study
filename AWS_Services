@@ -102,3 +102,14 @@ AWS Pinpoint:
  - Based on customer real-time data historic, create and send campaign and journey to audience
  - Schedule immediately or triggered messages based on real time events
  - Integrated with AWS Kinesis, send data to other services for later analisys
+
+AWS SDK:
+ - Help with using AWS services from within an application using language-specific APIs
+ 
+AWS Infraestructure  Event Management(IEM):
+ - AWS offers support to migraitng, infrastructure, scalability and operational support.
+ - Business plan
+ 
+ 
+ 
+ 
