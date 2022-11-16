@@ -12,3 +12,11 @@ VPC (Virtual Private Cloud):
   
 AWS Route 53:
   - Route 53 is a DNS scalable and avaliable (translate website name into IP or internet protocol) for websites
+
+
+Layer 7
+AWS WAF is a web application firewall that lets you monitor the HTTP and HTTPS requests that are forwarded to an Amazon API Gateway API, Amazon CloudFront or an Application Load Balancer. HTTP and HTTPS requests are part of the Application layer, which is layer 7.
+
+Layer 3 - Layer 3 is the Network layer and this layer decides which physical path data will take when it moves on the network. AWS Shield offers protection at this layer. WAF does not offer protection at this layer.
+
+Layer 4 - Layer 4 is the Transport layer and this layer data transmission occurs using TCP or UDP protocols. AWS Shield offers protection at this layer. WAF does not offer protection at this layer.
