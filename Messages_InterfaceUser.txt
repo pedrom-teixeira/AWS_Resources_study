@@ -1,0 +1,8 @@
+SQS (Simple Queue Service)
+  - SQS allows you to send, store, and receive messages between software components at any volume
+  
+SNS (Simple Notification Service)
+  - Amazon SNS is similar in that it is used to send out messages to services, but it can also send out notifications to end users.
+  
+AWS Polly:
+- Amazon Polly is a service that turns text into lifelike speech, allowing you to create applications that talk
