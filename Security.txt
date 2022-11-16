@@ -23,3 +23,6 @@
     - Provide Conformity report
     - Different types of agreements are available in AWS Artifact Agreements to address the needs of customers subject to specific regulations.
     
+  AWS Macie:
+    - Managed data security and data privacy service that uses machine learning and pattern matching to discover and protect your sensitive data in AWS
+    - Macie applies machine learning and pattern matching techniques to the buckets you select to identify and alert you to sensitive data
