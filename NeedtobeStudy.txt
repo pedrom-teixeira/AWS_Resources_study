@@ -2,8 +2,6 @@ Resource Group:
 
 Amazon Recognition:
 
-AWS Pinpoint:
-
 AWS Glue:
 
 AWS Polly:
