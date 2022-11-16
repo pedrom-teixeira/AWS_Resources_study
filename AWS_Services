@@ -27,12 +27,6 @@ Storage optimized are good for, can you guess it? Workloads that require high pe
   - Runs at Region level
   - Handle the traffic between online instances
   - ELB turns on offline instances, when the load is full and vice versa
-  
-  SQS (Simple Queue Service)
-  - SQS allows you to send, store, and receive messages between software components at any volume
-  
-  SNS (Simple Notification Service)
-  - Amazon SNS is similar in that it is used to send out messages to services, but it can also send out notifications to end users.
 
 --------------------------------------------------------------------------------------
 Elastic Beanstalk:
@@ -71,8 +65,6 @@ Auto Scaling:
     - Scheduled scaling
 
 
-
-
 -------------------------------------------------------------------------------------
 Lambda Funtion:
   - When the trigger is detected, runs the code on the managed environment
@@ -81,7 +73,6 @@ Lambda Funtion:
 AWS Lambda:
   - Severless compute options to upload code to Lambda Function
   - For host short running functions, service-oriented applications or event driven application and no manage environment
-
 
 
 AWS System Manager:
