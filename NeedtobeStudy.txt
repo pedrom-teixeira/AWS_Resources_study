@@ -2,17 +2,10 @@ Resource Group:
 
 Amazon Recognition:
 
-AWS Route 53:
-
-AWS Xray:
-
 AWS Pinpoint:
 
 AWS Glue:
 
 AWS Polly:
 
-AWS Secrets manager:
-
-AWS WAF:
 
