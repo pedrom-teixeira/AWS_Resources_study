@@ -47,6 +47,7 @@ Elastic Beanstalk:
   -------------------------------------------------------------------------------------
 CloudFormation:
   - Infrastructure as code
+  - allows you to use programming languages or a simple text file to model and provision, all the resources needed for your applications across all Regions and accounts
 -------------------------------------------------------------------------------------
 Lightsail: Virtual private service
   - Easy to configure
