@@ -8,12 +8,14 @@ EBS (Elastic Block Store):
   - Block storages breaks the file into blocks
   - Allows to update only changes
   - Attached to the EC2 instances
+  - Run only in one Availability zone
   
 EFS (Elastic File System):
   - Multiple instances accessing the data at same time
   - Linux file system
   - Stores data across multiple zones
   - On Premises server can access via Direct Connect
+  - Runs across Availability zones
   
 
 S3:
