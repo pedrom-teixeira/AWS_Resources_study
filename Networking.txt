@@ -9,6 +9,25 @@ VPC (Virtual Private Cloud):
   - Network ACL allows or not the traffic through the subnets
   - Security group runs below the Subnets and allows to group differents EC2 instances to recive each traffic
   
+AWS Direct Connect:
+  - Service solution that makes it easy to establish a dedicated network connection from your premises to AWS
+  - This connection is private and does not go over the public internet
+  - It takes at least a month to establish this physical connection.
+  
+AWS VPC Endpoint:
+  - endpoint enables you to privately connect your VPC to supported AWS services and VPC endpoint services powered by AWS PrivateLink 
+  - without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection
+  - Traffic between your VPC and the other service does not leave the Amazon network
+
+Internet Geteway:
+  - An Internet Gateway is a horizontally scaled, redundant, and highly available VPC component
+  - Allows communication between your VPC and the internet
+  - to provide a target in your VPC route tables for internet-routable traffic
+  - to perform network address translation (NAT) for instances
+  
+AWS Site-to-site:
+- AWS Site-to-Site VPN creates a secure connection between your data center or branch office and your AWS cloud resources
+  
   
 AWS Route 53:
   - Route 53 is a DNS scalable and avaliable (translate website name into IP or internet protocol) for websites
