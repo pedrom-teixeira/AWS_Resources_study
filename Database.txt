@@ -2,6 +2,7 @@
 RDS (Relational Data Service):
   - Supports severals engines (MySql, Oracle...)
   - Amazon RDS is available on six database engines, which optimize for memory, performance, or input/output (I/O).
+  - For RDS, Read replicas allow you to create read-only copies that are synchronized with your master database. There is no standby available while using read replicas. In case of infrastructure failure, you have to manually promote the read replica to be its own standalone DB Instance, which means that the database endpoint would change.
   
 Aurora Serverless:
   - Is an enterprise-class relational database
