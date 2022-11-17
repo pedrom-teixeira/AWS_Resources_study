@@ -1,0 +1,3 @@
+  AWS credits:
+    - Credits are applied in Soonest expiring, Least number of applicable products and Oldest credit order
+    
