@@ -40,4 +40,7 @@
   - A customer master key (CMK) is a logical representation of a master key
   - CMK includes metadata, such as the key ID, creation date, description, and key state
   
+  AWS Inspector:
+  - automated security assessment service that helps improve the security and compliance of applications deployed on your Amazon EC2 instances.
+  - detailed list of security findings prioritized by level of severity
   
