@@ -105,4 +105,10 @@ AWS Infraestructure  Event Management(IEM):
   - AWS Glue job is meant to be used for batch ETL data processing
   - Is a fully managed extract, transform, and load (ETL) service that makes it easy for customers to prepare and load their data for analytics.
  
- 
+ AWS Personal Health Dashboard:
+  - provides alerts and remediation guidance when AWS is experiencing events that may impact you
+  - alerts are triggered by changes in the health of your AWS resources, giving you event visibility, and guidance to help quickly diagnose and resolve issues
+  
+ AWS Service Health Dashboard:
+  -  publishes most up-to-the-minute information on the status and availability of all AWS services
+  - any time to get current status information or subscribe to an RSS feed to be notified of interruptions to each service.
