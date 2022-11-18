@@ -14,6 +14,8 @@
   AWS Web Application Firewall(WAF):
     - Is a web application firewall that lets you monitor the HTTP(S) requests that are forwarded to an Amazon CloudFront distribution, an Amazon API Gateway API, or an Application Load Balancer
     - It is not a free service
+    - By using AWS WAF, you can configure web access control lists (Web ACLs) on your CloudFront distributions or Application Load Balancers to filter and block requests based on request signatures.
+    - using AWS WAF's rate-based rules, you can automatically block the IP addresses of bad actors when requests matching a rule exceed a threshold that you define.
     
   AWS Guard Duty:
     - Its a threat detection that monitors suspect activity or unauthorized behavior to protect your AWS account
