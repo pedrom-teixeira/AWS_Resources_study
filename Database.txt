@@ -28,6 +28,8 @@ DMS (Database Migration Service):
   - The source and target do not have to be the same type
   - On-premises, EC2, or RDS to EC2 or RDS
   - Different types needs AWS Schema Converter
-
-DocumentDB:
-  - 
+  
+Athena:
+ - simply point to your data in Amazon S3, define the schema, and start querying using standard SQL
+ - no need for complex ETL jobs to prepare your data for analysis
+ - Athena is serverless, so there is no infrastructure to manage
