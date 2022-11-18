@@ -1,3 +1,7 @@
   AWS credits:
     - Credits are applied in Soonest expiring, Least number of applicable products and Oldest credit order
     
+    
+Reliability pillar of the AWS Well-Architected Framework:
+  - AWS states that before architecting any system, foundational requirements that influence reliability should be in place 
+  - The services that are part of foundations are: Amazon VPC, AWS Trusted Advisor, AWS Service Quotas
