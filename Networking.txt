@@ -41,3 +41,14 @@ AWS WAF is a web application firewall that lets you monitor the HTTP and HTTPS r
 Layer 3 - Layer 3 is the Network layer and this layer decides which physical path data will take when it moves on the network. AWS Shield offers protection at this layer. WAF does not offer protection at this layer.
 
 Layer 4 - Layer 4 is the Transport layer and this layer data transmission occurs using TCP or UDP protocols. AWS Shield offers protection at this layer. WAF does not offer protection at this layer.
+
+
+ AWS Global Accelerator:
+  - is a service that improves the availability and performance of your applications with local or global users
+  - provides static IP addresses that act as a fixed entry point to your application endpoints in a single or multiple AWS Regions
+  -  uses the AWS global network to optimize the path from your users to your applications
+  -  is a good fit for non-HTTP use cases, such as gaming (UDP), IoT (MQTT), or Voice over IP, as well as for HTTP
+  
+ AWS CloudFront:
+  - is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency
+  - cannot be used to improve application availability and performance using the AWS global network
