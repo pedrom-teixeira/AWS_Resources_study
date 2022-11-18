@@ -15,6 +15,7 @@ Dynamo DB (Serverless):
   - Dont nedd to worry about scalling the system
   - Redundantly
   - No-Sql
+  - is a key-value and document database that delivers single-digit millisecond performance at any scale.
 
 RedShift:
   - Data wharehouse as a service
