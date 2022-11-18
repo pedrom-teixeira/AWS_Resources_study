@@ -58,6 +58,8 @@ Auto Scaling:
   - Can be configured by Launch configuration (legado) ou Launch template
   - High avaliability
   - Span trhough avaliability zones
+  - Free to use
+  
   Scalling types:
     - Manual
     - Dynamic allows to scale using cloudwatch alarms trhough some rules
