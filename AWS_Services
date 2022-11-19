@@ -139,5 +139,6 @@ AWS Service Catalog:
 AWS Organizations:
  -  helps you centrally govern your environment as you grow and scale your workloads on AWS
  -  help you to centrally manage billing; control access, compliance, and security; and share resources across your AWS accounts
+ - govern access to AWS services, resources and regions
  
  
