@@ -46,6 +46,7 @@
   AWS Inspector:
   - automated security assessment service that helps improve the security and compliance of applications deployed on your Amazon EC2 instances.
   - detailed list of security findings prioritized by level of severity
+  - automatically assesses applications for exposure, vulnerabilities, and deviations from best practices
   
   AWS CloudHSM:
    - It is a fully-managed service that automates time-consuming administrative tasks for you, such as hardware provisioning, software patching, high-availability, and backups
