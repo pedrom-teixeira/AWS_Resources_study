@@ -6,3 +6,11 @@ SNS (Simple Notification Service)
   
 AWS Polly:
 - Amazon Polly is a service that turns text into lifelike speech, allowing you to create applications that talk
+
+AWS MQ:
+  - is a managed message broker service for Apache ActiveMQ and RabbitMQ that makes it easy to set up and operate message brokers on AWS
+  - can switch from any standards-based message broker to Amazon MQ without rewriting the messaging code in your applications
+  
+AWS Kinesis:
+  - enables you to build custom applications that process or analyze streaming data for specialized needs
+  - clickstreams, application logs, and social media to an Amazon Kinesis
