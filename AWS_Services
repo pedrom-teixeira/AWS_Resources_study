@@ -34,6 +34,9 @@ Elastic Beanstalk:
   - Need to provide the aplication code and desired configuration
   - Not have to manage all separately
   - Allows to focus on the business application, not on infrastructure
+  -  deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers
+  - 
+  
   Adjust capacity
   Load balancing
   Automatic scaling
@@ -129,6 +132,12 @@ AWS Compute Optimizer:
  - Amazon EC2 instance types, Amazon EBS volume configurations, and AWS Lambda function memory sizes
  - provides EC2 instance type and size recommendations for EC2 Auto Scaling groups with a fixed group size
  
+AWS Service Catalog:
+ - allows organizations to create and manage catalogs of IT services that are approved for use on AWS
+ - IT services can include everything from virtual machine images, servers, software, and databases to complete multi-tier application architecture
  
+AWS Organizations:
+ -  helps you centrally govern your environment as you grow and scale your workloads on AWS
+ -  help you to centrally manage billing; control access, compliance, and security; and share resources across your AWS accounts
  
  
