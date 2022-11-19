@@ -58,3 +58,22 @@ Layer 4 - Layer 4 is the Transport layer and this layer data transmission occurs
  AWS CloudFront:
   - is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency
   - cannot be used to improve application availability and performance using the AWS global network
+  
+ AWS Edge Location:
+  - Is a site that CloudFront uses to cache copies of the content for faster delivery to users at any location
+  
+ AWS Local Zone:
+  - allow you to use select AWS services, like compute and storage services, closer to more end-users, providing them very low latency
+  - Running locally
+  - should use to deploy workloads closer to your end-users for low-latency requirements
+  
+ AWS WaveLenght:
+  - extends the AWS cloud to a global network of 5G edge locations to enable developers to innovate and build a whole new class of applications that require ultra-low latency
+  
+  
+  
+  
+  
+  
+  
+  
