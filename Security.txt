@@ -16,6 +16,7 @@
     - It is not a free service
     - By using AWS WAF, you can configure web access control lists (Web ACLs) on your CloudFront distributions or Application Load Balancers to filter and block requests based on request signatures.
     - using AWS WAF's rate-based rules, you can automatically block the IP addresses of bad actors when requests matching a rule exceed a threshold that you define.
+    - protect your web applications or APIs against common web exploits
     
   AWS Guard Duty:
     - Its a threat detection that monitors suspect activity or unauthorized behavior to protect your AWS account
