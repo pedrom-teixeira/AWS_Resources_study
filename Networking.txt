@@ -26,6 +26,12 @@ Internet Geteway:
   - to provide a target in your VPC route tables for internet-routable traffic
   - to perform network address translation (NAT) for instances
   
+AWS Service Storage Gateway:
+  - is a hybrid cloud storage service that connects your existing on-premises environments with the AWS Cloud
+  Tape Gateway
+  Volume Gateway
+  File Gateway
+  
 AWS Site-to-site:
 - AWS Site-to-Site VPN creates a secure connection between your data center or branch office and your AWS cloud resources
   
