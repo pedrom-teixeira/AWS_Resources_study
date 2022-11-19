@@ -47,3 +47,6 @@
   - automated security assessment service that helps improve the security and compliance of applications deployed on your Amazon EC2 instances.
   - detailed list of security findings prioritized by level of severity
   
+  AWS CloudHSM:
+   - It is a fully-managed service that automates time-consuming administrative tasks for you, such as hardware provisioning, software patching, high-availability, and backups
+   - cloud-based hardware security module (HSM) that enables you to easily generate and use your encryption keys on the AWS Cloud
