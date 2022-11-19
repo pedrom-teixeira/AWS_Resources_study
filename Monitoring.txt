@@ -15,6 +15,7 @@ Trusted advisor:
   - Best practices tips like more efficient, more security or sove money
   - Evaluate resources online against cost optimization, performance, security, fault tolerance and service limits
   - The recommendations it's shown on TAdvisor dashboard
+  - provides you real-time guidance to help you provision your resources
 
 AWS Config:
   - Hitorico de configurações e mudaças de configurações
