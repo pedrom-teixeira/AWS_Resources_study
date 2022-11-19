@@ -1,4 +1,4 @@
-VPC (Virtual Private Cloud):
+AWS VPC (Virtual Private Cloud):
   - Private subnet
   - Public subnet
   - spans all of the Availability Zones in the Region
@@ -31,6 +31,9 @@ AWS Service Storage Gateway:
   Tape Gateway
   Volume Gateway
   File Gateway
+  
+AWS VPN:
+- solutions establish secure connections between on-premises networks, remote offices, client devices, and the AWS global network
   
 AWS Site-to-site:
 - AWS Site-to-Site VPN creates a secure connection between your data center or branch office and your AWS cloud resources
