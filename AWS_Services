@@ -123,3 +123,12 @@ AWS Infraestructure  Event Management(IEM):
   - is an easy-to-use cloud platform that offers you everything needed to build an application or website, plus a cost-effective, monthly plan
   - offers several preconfigured, one-click-to-launch operating systems
   - development stacks, and web applications, including Linux, Windows OS, and WordPress
+
+AWS Compute Optimizer:
+ - helps you identify the optimal AWS resource configurations
+ - Amazon EC2 instance types, Amazon EBS volume configurations, and AWS Lambda function memory sizes
+ - provides EC2 instance type and size recommendations for EC2 Auto Scaling groups with a fixed group size
+ 
+ 
+ 
+ 
