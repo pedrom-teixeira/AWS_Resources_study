@@ -18,7 +18,7 @@ EFS (Elastic File System):
   - Runs across Availability zones
   
 
-S3:
+S3: 
   - Unlimited amount of data
   - Directories (buckets)
   - Files (objects)
