@@ -9,3 +9,8 @@ EKS(Elastic Kubernets Service):
 
 AWS Fargate:
   - Simple Container orchestration (Docker)
+
+AWS Elastic Container Registry (ECR):
+  - can be used to store, manage, and deploy Docker container images
+  - eliminates the need to operate your container repositories
+  - 
