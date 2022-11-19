@@ -2,6 +2,8 @@ ECS (Elastic Container Service):
   - Container orchestration (Docker)
   - allows you to easily run applications on a managed cluster of Amazon EC2 instances
   - you can access the underlying EC2 instances, but the set up is more complex than just using the EC2 service directly
+  - is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster
+  
 EKS(Elastic Kubernets Service):
   - Container orchestration (Docker)
 
