@@ -5,6 +5,7 @@
 Reliability pillar of the AWS Well-Architected Framework:
   - AWS states that before architecting any system, foundational requirements that influence reliability should be in place 
   - The services that are part of foundations are: Amazon VPC, AWS Trusted Advisor, AWS Service Quotas
+  - Operational exellence, Security, Reliability, Performance Efficiency and Cost Optmization
 
 There are three fundamental drivers of cost with AWS: compute, storage, and outbound data transfer
 
