@@ -38,7 +38,8 @@ AWS Site-to-site:
   
 AWS Route 53:
   - Route 53 is a DNS scalable and avaliable (translate website name into IP or internet protocol) for websites
-  - You can use Route 53 geolocation routing policy to block certain geographies.
+  - You can use Route 53 geolocation routing policy to block certain geographies
+  - Important part in building a comprehensive defense against DDoS attacks for your dynamic web applications.
 
 
 Layer 7
