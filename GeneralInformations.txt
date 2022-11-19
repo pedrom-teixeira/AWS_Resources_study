@@ -7,3 +7,15 @@ Reliability pillar of the AWS Well-Architected Framework:
   - The services that are part of foundations are: Amazon VPC, AWS Trusted Advisor, AWS Service Quotas
 
 There are three fundamental drivers of cost with AWS: compute, storage, and outbound data transfer
+
+
+
+
+Basic:
+
+Developer:
+
+Business:
+
+Enterprise:
+provides access to a Technical Account Manager (TAM)
