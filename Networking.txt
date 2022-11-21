@@ -37,6 +37,8 @@ AWS VPN:
   
 AWS Site-to-site:
 - AWS Site-to-Site VPN creates a secure connection between your data center or branch office and your AWS cloud resources
+- This connection goes over the public internet
+- Virtual Private Gateway (or a Transit Gateway) and Customer Gateway are the components of a VPC.
   
   
 AWS Route 53:
