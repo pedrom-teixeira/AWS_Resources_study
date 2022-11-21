@@ -2,6 +2,7 @@ CloudWatch:
   - CloudWatch alarm set a threshold for a metric to trigger an action
   - Integrate with SNS, so send a SMS (integrate with severals resources)
   - Cloudwatch dashboard displays all metric near real time to monitor them (centrallization metric)
+  - Billing metric data is stored in the US East (N. Virginia) Region and represents worldwide charges.
 
 CloudTrail:
   - It's an auditing tool
