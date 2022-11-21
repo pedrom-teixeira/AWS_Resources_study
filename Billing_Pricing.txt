@@ -3,10 +3,9 @@
     
   AWS Budgets:
     - Allows o create budgets plan your service usage, service costs, and instance reservations. Also is possible to configure alerts for exceed resources.
-    - Resource budget - This is a made-up option and has been added as a distractor
-    - Software budget - This is a made-up option and has been added as a distractor
-
-Hardware budget - This is a made-up option and has been added as a distractor
+    - Cost budget - Helps you plan how much you want to spend on a service.
+    - Usage budget - Helps you plan how much you want to use one or more services.
+    - Reservation budget - This helps you track the usage of your Reserved Instances (RI).
     
   AWS Cost explorer:
     - Vizualize ou generate reports with customs filters and groups to analize costs and usages.
