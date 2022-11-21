@@ -76,10 +76,14 @@ Layer 4 - Layer 4 is the Transport layer and this layer data transmission occurs
  AWS WaveLenght:
   - extends the AWS cloud to a global network of 5G edge locations to enable developers to innovate and build a whole new class of applications that require ultra-low latency
   
+ AWS Transit Gateway:
+  - Connects VPCs and on-premises networks through a central hub
+  - Simplifies your network and puts an end to complex peering relationships
+  - helpful in reducing the complex topology of VPC peering when a lot of systems are involved
   
-  
-  
-  
+ AWS APIGateway:
+  - fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale
+  - APIs act as the "front door" for applications to access data, business logic, or functionality from your backend services.
   
   
   
