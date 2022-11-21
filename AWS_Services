@@ -62,6 +62,8 @@ Auto Scaling:
   - High avaliability
   - Span trhough avaliability zones
   - Free to use
+  - Scales In
+  - Scales out
   
   Scalling types:
     - Manual
