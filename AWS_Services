@@ -64,6 +64,7 @@ Auto Scaling:
   - Free to use
   - Scales In
   - Scales out
+  - Do not scales down or up (upgrade to a more powerfull EC2 instances)
   
   Scalling types:
     - Manual
