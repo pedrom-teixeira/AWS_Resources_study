@@ -87,4 +87,12 @@ Layer 4 - Layer 4 is the Transport layer and this layer data transmission occurs
   - APIs act as the "front door" for applications to access data, business logic, or functionality from your backend services.
   
   
+ AWS Security group:
+  - acts as a virtual firewall for your instance to control inbound and outbound traffic
+  - is stateful, that is, it automatically allows the return traffic
+ 
+ AWS NACL:
+  - is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets
+  - A network ACL contains a numbered list of rules
+  - determine whether traffic is allowed in or out of any subnet associated with the network ACL
   
