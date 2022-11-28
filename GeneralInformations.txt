@@ -20,3 +20,9 @@ Business:
 
 Enterprise:
 provides access to a Technical Account Manager (TAM)
+
+
+
+  Invoices:
+    - Every AWS account provides its own invoice end of the month
+    - You can get separate invoices for development and production environments by setting up separate AWS accounts for each environment
