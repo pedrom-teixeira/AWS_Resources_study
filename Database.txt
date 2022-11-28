@@ -21,7 +21,9 @@ RedShift:
   - Data wharehouse as a service
   - Scalable
   - Faster the traditional databases
-  -  it simple and cost-effective to analyze all your data using standard SQL
+  - it simple and cost-effective to analyze all your data using standard SQL
+  - Analytical processing
+  - high-performance storage, and massively parallel query execution
  
 DMS (Database Migration Service):
   - Migration existing database into AWS
@@ -39,5 +41,6 @@ AWS ElastiCache:
  - allows you to seamlessly set up, run, and scale popular open-Source compatible in-memory data stores in the cloud.
  - retrieving data from high throughput and low latency in-memory data stores
  - popular choice for real-time use cases like Caching, Session Stores, Gaming, Geospatial Services, Real-Time Analytics, and Queuing
+ - cannot be used for online analytical processing
  
  
