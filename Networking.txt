@@ -114,3 +114,8 @@ Layer 4 - Layer 4 is the Transport layer and this layer data transmission occurs
   - A network ACL contains a numbered list of rules
   - determine whether traffic is allowed in or out of any subnet associated with the network ACL
   
+AWS Transit Gateway:
+  - Used to integrate most then 2 VPCs interconnections
+  - your network and puts an end to complex peering relationships
+  - connects VPCs and on-premises networks through a central hub
+  
