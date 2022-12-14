@@ -28,6 +28,7 @@ S3:
   - Permissions on tiers/class
   - Do not need a EC2 instance
   - Web enable
+  - can be accessed from on-premises only via AWS Storage Gateway.
   - Object storage use for any file like documents, videos, files, images...
   - The act of encrypting data before sending it to Amazon S3 is termed as client-side encryption
   
