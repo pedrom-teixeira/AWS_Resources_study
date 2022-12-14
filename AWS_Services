@@ -5,6 +5,7 @@ EC2 Definition/Introduction:
   - EC2 instances could be configurated as Windows or Linux operational systems
   - EC2 instances are resizeable (Vertical Scalling)
   - For traditional applications, full access to OS
+  - EC2 Instance connect is a browser-based client with you can use to connect instance to MAC, Linux or Windows OS.
   
 EC2 Placement groups:
   - Cluster: Closest instances -> low latency, high workload, HPC
