@@ -24,6 +24,7 @@
     
   AWS Artifact:
     - Provide Conformity report
+    - include our Service Organization Control (SOC) reports, Payment Card Industry (PCI) reports
     - Different types of agreements are available in AWS Artifact Agreements to address the needs of customers subject to specific regulations.
     
   AWS Macie:
