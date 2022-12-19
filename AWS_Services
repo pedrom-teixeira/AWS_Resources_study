@@ -148,3 +148,9 @@ AWS Organizations:
  AWS Single Sign-On (SSO):
   - easy to centrally manage access to multiple AWS accounts and business applications
  
+ Amazon Cognito:
+  - add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily
+  - have the option to authenticate users through social identity providers such as Facebook, Twitter, or Amazon
+  
+  
+  
