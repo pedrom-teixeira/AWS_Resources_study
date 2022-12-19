@@ -23,3 +23,6 @@ AWS Comprehend:
   - is a natural-language processing (NLP) service that uses machine learning to uncover information in unstructured data
   - instead of combing through documents, the process is simplified and unseen information is easier to understand
   
+AWS Personalize:
+  - can be used to personalize the end-user experience over any digital channel
+ 
