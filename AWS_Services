@@ -145,4 +145,6 @@ AWS Organizations:
  -  help you to centrally manage billing; control access, compliance, and security; and share resources across your AWS accounts
  - govern access to AWS services, resources and regions
  
+ AWS Single Sign-On (SSO):
+  - easy to centrally manage access to multiple AWS accounts and business applications
  
