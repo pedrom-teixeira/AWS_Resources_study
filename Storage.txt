@@ -49,6 +49,13 @@ S3:
     - a secure, durable, and extremely low-cost Amazon S3 cloud storage class for data archiving and long-term backup
     - deliver 99.999999999% durability, and provide comprehensive security and compliance capabilities
     
+  S3 Bucket policies:
+    - You add a bucket policy to a bucket to grant other AWS accounts or IAM users access permissions for the bucket and the objects in it
+  
+  S3 Lifecycle management:
+    - Is a set of rules that define actions that Amazon S3 applies to a group of objects
+ 
+    
   AWS Instance Store:
   - instance store provides temporary block-level storage for your instance
   - is a good option when you need storage with very low latency, but you don't need the data to persist
