@@ -49,4 +49,6 @@ AWS ElastiCache:
  - popular choice for real-time use cases like Caching, Session Stores, Gaming, Geospatial Services, Real-Time Analytics, and Queuing
  - cannot be used for online analytical processing
  
+AWS Glue:
+  - fully managed extract, transform, and load (ETL) service that makes it easy for customers to prepare and load their data for analytics
  
