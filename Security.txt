@@ -36,10 +36,7 @@
   
   AWS Maganed CMK:
   - managed CMKs are CMKs in your account that are created, managed, and used on your behalf by an AWS service that is integrated with AWS KMS.
-  
-  Secrets Manager:
-  - helps you protect secrets needed to access your applications, services, and IT resources
-  
+
   Costumer Managed CKM:
   - A customer master key (CMK) is a logical representation of a master key
   - CMK includes metadata, such as the key ID, creation date, description, and key state
