@@ -22,6 +22,10 @@
     - Power computing
     - Runs AWS Lambda Functions
     - AWS EC2 AMIs and IOT GressGrass
+    
   AWS Snowmobile:
     - It's and system on a truck (literaly) wich is delivered to company and allow to perform lagest migrations. Houses 100 petabytes.
-    
+   
+  AWS DataSync:
+    - Is a secure online data transfer service that simplifies, automates, and accelerates copying terabytes of data to and from AWS storage services
+    - 
