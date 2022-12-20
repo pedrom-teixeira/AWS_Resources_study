@@ -46,7 +46,7 @@ AWS Route 53:
   - Route 53 is a DNS scalable and avaliable (translate website name into IP or internet protocol) for websites
   - You can use Route 53 geolocation routing policy to block certain geographies
   - Important part in building a comprehensive defense against DDoS attacks for your dynamic web applications
-  - 
+  - can monitor the health and performance of your application as well as your web servers and other resources.
   - Policies:
   Simple routing policy – single resource that performs a given function for your domain
   
