@@ -4,3 +4,7 @@
   AWS AWS Quick Starts references:
     - are built by AWS solutions architects and partners to help you deploy popular technologies on AWS
     - you can build your production environment quickly and start using it immediately
+
+  AWS CodeGuru:
+    - is a developer tool that provides intelligent recommendations to improve code quality and identify an application’s most expensive lines of code
+    - machine learning and automated reasoning to identify critical issues, security vulnerabilities, and hard-to-find bugs during application development
