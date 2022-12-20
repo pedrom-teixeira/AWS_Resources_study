@@ -13,4 +13,5 @@
   AWS Cost and Usage Reports:
     - contains the most comprehensive set of cost and usage data available
     - can receive reports that break down your costs by the hour or month, by product or product resource, or by tags that you define yourself
+    - granular billing
     
