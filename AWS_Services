@@ -24,10 +24,13 @@ Compute optimized instances are ideal for compute-intensive tasks like gaming se
 Accelerated computing are good for floating point number calculations, graphics processing, or data pattern matching, as they use hardware accelerators. 
 
 Storage optimized are good for, can you guess it? Workloads that require high performance for locally stored data.
+
   ELB (Elastic Load Balancing):
   - Runs at Region level
   - Handle the traffic between online instances
   - ELB turns on offline instances, when the load is full and vice versa
+  - best suited for HTTP and HTTPS traffic
+  - High availability and fault tolerance
 
 --------------------------------------------------------------------------------------
 Elastic Beanstalk:
