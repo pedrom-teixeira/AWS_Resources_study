@@ -61,3 +61,8 @@ S3:
   - is a good option when you need storage with very low latency, but you don't need the data to persist
   - has a fault tolerant architecture, so it can automatically handle any failures
   - ideal for the temporary storage of information that changes frequently, such as buffers, caches, scratch data, and other temporary content, or for data that is replicated across a fleet of instances, such as a load-balanced pool of web servers
+  
+  
+  AWS Elastic Cache:
+    - is a web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud
+    - can cache some values to take the load off the database.
