@@ -23,6 +23,10 @@ AWS Comprehend:
   - is a natural-language processing (NLP) service that uses machine learning to uncover information in unstructured data
   - instead of combing through documents, the process is simplified and unseen information is easier to understand
   
+AWS Lex:
+  - is a service for building conversational interfaces using voice and text
+  - enabling the addition of sophisticated, natural language ‘chatbots’ to new and existing applications (NLU)
+  
 AWS Personalize:
   - can be used to personalize the end-user experience over any digital channel
  
