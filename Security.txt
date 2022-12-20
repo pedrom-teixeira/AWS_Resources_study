@@ -49,6 +49,7 @@
   AWS CloudHSM:
    - It is a fully-managed service that automates time-consuming administrative tasks for you, such as hardware provisioning, software patching, high-availability, and backups
    - cloud-based hardware security module (HSM) that enables you to easily generate and use your encryption keys on the AWS Cloud
+   - allows you to securely generate, store, and manage cryptographic keys used for data encryption in a way that keys are accessible only by you
    
   IAM access advisor:
     - shows the service permissions granted to a user and when those services were last accessed
