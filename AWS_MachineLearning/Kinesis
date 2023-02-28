@@ -1,0 +1,41 @@
+
+Stream:
+    Retention period of 24h
+    Tha capacity of your stream will be a function of numbers of shards. To increase or decrease stream capacity, you can increase or descrease number of shards.
+    Shard:
+        - is an unique sequence of records in a stream
+        - Each shard supports 5 transactions per second for read and 1000  per second for write
+        - Each shard supports total read rate of 2MB per second and 1MB per second for write
+
+    Partition Key:
+        - Is used to group data by shard within stream
+    
+    Sequence Number:
+        - Each data has a sequence number thas is UNIQUE per PARTITION-KEY in shard
+    
+    Consumer:
+        - Gets records from AWS Kinesis Data Streams and process them. Known as Amazon Kinesis Data Streams Application
+
+    Kinesis Firehouse:
+        - Dont manage the underlynig infrastructure and the shards
+        - Just need a data source that can put the data into Firehouse delivey stream
+
+        Data Producer:
+            - Send records to Kinesis Data Firehouse delivery streams
+            - You can also congfigure Firehouse delivery stream to read data from existing Kinesis data stream and load to destinations
+        Record:
+            - Each record can't exceeds 1000kb (1MB)
+        
+        Destinations:
+            - S3
+            - Redshift
+            - Elasticsearch
+            - Splunk
+            - Datadog
+            - Dynatrace
+            - LogicMonitor
+            - MongoDB
+            - New Relic
+            - Sumo Logic
+
+            
