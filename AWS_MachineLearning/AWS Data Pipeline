@@ -1,0 +1,5 @@
+Data Pipeline:
+    - Can move data from a place to another (ETL service)
+    - Popular destinations: S3, RDS, DynamoDB, Redshift and EMR
+    - Orchertration service
+    - More control over the environment, resources and code

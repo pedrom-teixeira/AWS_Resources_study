@@ -27,3 +27,8 @@ AWS X-Ray:
   - Helps to analyze and debug serverless and distributed application
   - You can understand how your application and its underlying services are performing to identify and troubleshoot the root cause of performance issues and errors.
   https://d1.awsstatic.com/Products/product-name/Images/product-page-diagram_AWS-X-Ray_how-it-works.2922edd4bfe011e997dbf32fdf8bd520bcbc85fb.png
+
+AWS DMS:
+  - Continuous Data Replication
+  - No data transformation
+  - Once the data is in AWS, you can use Glue to transform it
