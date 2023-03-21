@@ -1,0 +1,35 @@
+Pandas:
+    - Explore data
+    - Manipulate the data
+
+Numpy:
+    - Work with arrays
+    - Interages with pandas dataframes
+
+Matplotlib:
+    - Data Visualisation
+    - Boxplot is a simple way to see how your data is distribuited and how many outliers you might have
+    - Histogram  
+
+Seaborn: pretty charts and graphs
+    - More flexible data plot
+    - Heat map represents the average values at each point there. ntuitive fell how often different datapoints appear in different combination of categories
+    - Pairplot plots every kind of combinatio of attributes all at once
+    - Jointplot combine the scatter plot with histograms on each axis
+
+Scikit-learn:
+    - Focus on ML algoriths and models such as regrassion, neural network, classifications...
+    - Can provide some pre-processing functions and methods
+
+Data Types:
+    - Numerical: Represents a quantitative measure, something wich can be measured. Could assume discrete or continuous data.
+    - Categorical data: Represents qualitative data wich has no mathematical meaning. Could assume numbers or letter.
+    - Ordinal: Mixture of numerical and categorical, like a film scale or an evaluation of something.
+
+
+Data distribuition:
+    - Normal distribuition(Gauss distribution)
+    - Probability Mass Function seems like normal distribution but for discrete values
+    - Poisson distribution wokrs with discrete data
+    - Binomial distributions discrete distribution, used for binari data like negative or positive, true or false
+    - Bernoulli distribution, is a especial case on binomial but just a single trial

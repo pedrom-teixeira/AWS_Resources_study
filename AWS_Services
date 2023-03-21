@@ -157,4 +157,6 @@ AWS Organizations:
   - have the option to authenticate users through social identity providers such as Facebook, Twitter, or Amazon
   
   
-  
+  AWS Step Fuction:
+    - Can orchestrate Machine learning flow
+    - Multiple possibilities to orchestrate

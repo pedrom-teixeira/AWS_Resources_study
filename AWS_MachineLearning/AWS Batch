@@ -1,0 +1,4 @@
+AWS Batch:
+    - Runs jobs like Docker images
+    - Dont provision EC2 instances (Dynamic instances provisioning)
+    - Fully serverless

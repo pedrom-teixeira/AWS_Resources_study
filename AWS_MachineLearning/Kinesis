@@ -1,11 +1,17 @@
 
+Kinesis is great for logs, metrics, IOT and clickstreams
+
+
 Stream:
-    Retention period of 24h
-    Tha capacity of your stream will be a function of numbers of shards. To increase or decrease stream capacity, you can increase or descrease number of shards.
+    - Retention period of 24h
+    - Tha capacity of your stream will be a function of numbers of shards. To increase or decrease stream capacity, you can increase or descrease number of shards.
+    - Real time
+    - Allows to create costom code (producer/consumer)
     Shard:
         - is an unique sequence of records in a stream
         - Each shard supports 5 transactions per second for read and 1000  per second for write
         - Each shard supports total read rate of 2MB per second and 1MB per second for write
+        - Throughput is write
 
     Partition Key:
         - Is used to group data by shard within stream
@@ -16,26 +22,41 @@ Stream:
     Consumer:
         - Gets records from AWS Kinesis Data Streams and process them. Known as Amazon Kinesis Data Streams Application
 
-    Kinesis Firehouse:
-        - Dont manage the underlynig infrastructure and the shards
-        - Just need a data source that can put the data into Firehouse delivey stream
+Kinesis Firehouse(is a ingestion service):
+    - Near-real-time
+    - Dont manage the underlynig infrastructure and the shards
+    - Just need a data source that can put the data into Firehouse delivey stream
+    - Load streams into destinations
+    - Automatic Scales
 
-        Data Producer:
-            - Send records to Kinesis Data Firehouse delivery streams
-            - You can also congfigure Firehouse delivery stream to read data from existing Kinesis data stream and load to destinations
-        Record:
-            - Each record can't exceeds 1000kb (1MB)
-        
-        Destinations:
-            - S3
-            - Redshift
-            - Elasticsearch
-            - Splunk
-            - Datadog
-            - Dynatrace
-            - LogicMonitor
-            - MongoDB
-            - New Relic
-            - Sumo Logic
+    Data Producer:
+        - Send records to Kinesis Data Firehouse delivery streams
+        - You can also congfigure Firehouse delivery stream to read data from existing Kinesis data stream and load to destinations
+    Record:
+        - Each record can't exceeds 1000kb (1MB)
+    
+    Destinations:
+        - S3
+        - Redshift
+        - Elasticsearch
+        - Splunk
+        - Datadog
+        - Dynatrace
+        - LogicMonitor
+        - MongoDB
+        - New Relic
+        - Sumo Logic
+
+ 
+Kinesis Data Analtics:
+    Realtime analytics on streams using SQL
+
+    Machine Learning on Kinesis:
+        - Random cut forest detect anomaly on numeric columns in a stream
+        - Hotspot locate dense areas
+
+
+
+
 
             

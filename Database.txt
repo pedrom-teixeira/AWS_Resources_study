@@ -12,6 +12,8 @@ RDS (Relational Data Service):
 Aurora Serverless:
   - Is an enterprise-class relational database
   - Helps to reduce your database costs by reducing unnecessary input/output (I/O) operations
+  - OLTP Store
+  - Row based
 
 Dynamo DB (Serverless):
   - Dont need EC2 instances
@@ -22,6 +24,7 @@ Dynamo DB (Serverless):
   - No-Sql
   - is a key-value and document database that delivers single-digit millisecond performance at any scale.
   - Schemaless
+  - Usefull as machine learning model store
 
 RedShift:
   - Data wharehouse as a service
@@ -30,6 +33,8 @@ RedShift:
   - it simple and cost-effective to analyze all your data using standard SQL
   - Analytical processing
   - high-performance storage, and massively parallel query execution
+  - RedShift Spectrum can query on S3 buckets
+  - OLAP store
  
 DMS (Database Migration Service):
   - Migration existing database into AWS
