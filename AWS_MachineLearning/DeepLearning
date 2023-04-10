@@ -1,0 +1,6 @@
+Function Activation:
+    - It's the function inside pf a given node or neuron, wich sums all of the incoming inputs into it and decides the output to next layer
+    - LINEAR does not do any transformation. Output whatever it got on input
+    - BINARY if nothing is coming in, output nothing but if anything is coming in, output a positive value (ON/OFF). Can't handle any mutiple classification
+    - SIGMOID(LOGISTC) nice and smooth, scale output between 0 and 1. Changing slowly for high or low values. Computationally expensive
+    - TANH(HYPERBOLIC TANGENT) nice and smooth, scale output between -1 and 1. Changing slowly for high or low values. Preferred over sigmoid. Computationally expensive
