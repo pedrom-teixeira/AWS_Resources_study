@@ -1,3 +1,74 @@
     SageMaker Ground Truth:
         - Labeling images
         - Reduce labeling jobs
+
+
+    Linear Learner:
+        - Linear regression 
+        - Can handle regression numeric and classification (Binary or multiclass)
+
+        Iput format:
+            - RecordIO-wrapped protobuf (float32 only)
+            - CSV, first column is assumed to be the label
+            - Pipe mode could stream the data from a bucket as example, as need, multiple files. More efficient to handle large datasets
+            - File mode copy all the data as a single file
+
+        How use it:
+            - Preprocessing when data must be normalized or input data should be shuffled
+            - Training using stochastic gradient, choose the better one optimization algorithm, multiple model are optimized in parallel and offers L1 and L2 regularization
+            
+        Instances types:
+            - Does not helps to have more then one GPU in a machine
+
+
+    XGBoost:
+        - It's a boosted group of decision trees
+
+        Input format:
+            - CSV
+            - libsvm
+            - recordIO-protobuf
+            - parquet
+
+        Hyperparametters:
+            - Subsample to prevent overfitting
+            - ETA is step size to prevent overfitting
+            - Gamma is minimium loss reduction to create a partition 
+            - Alpha L1  regularization term
+            - Lambda L2 regularization term
+            - eval metric optimize on AUC, error, RMSE, precision or recall as example
+            - scale_pos_weight adjusts positive and negatives  weights, is helpful for unbalanced classes
+            - max_depth is max depth of tree, too large could overfit
+
+        Instances types:
+            - It use CPU for mutiple instance training
+            - Is memory-bound, not compute-bound
+            - M5 is a good choice
+
+
+    Seq2Seq (sequence to sequence algorithm):
+        - Commomly used as translate algorithm or also used to text summarization.
+        - USe tokens (numbers) as input to represent the words, as mentioned
+        - Can be implemented by RNNs or CNN
+
+        Inpunt Format:
+            - recordIO-protobuf as tokenized text files
+            - We must provide  the training data, validation data and vocabulary files
+
+        Hyperparameter:
+            - Batchsize
+            - Opmizer_type (adam, sgd, rmsprop)
+            - learning_rate
+            - Num_layers_encoder
+            - Num_layers_decoder
+            - Can be opmized on accuracy, BLUEU score and Perplexity
+
+        Instance types:
+            - Can only use GPU instance type
+            - Can only use a  sigle GPU machine to training but multiple-GPU on a sigle machine
+
+
+    DeepAR:
+        - Forecasting  one-dimentional time series data like a sequence of datapoint over time and predict the future behavior
+        - Can train severals time series at on
+        

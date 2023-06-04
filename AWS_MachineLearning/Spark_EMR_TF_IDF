@@ -1,0 +1,4 @@
+TF-IDF:
+    - Frequency and inverse document frequency
+    - How relevant a given term is for a given document
+    - how often a term appears in a document

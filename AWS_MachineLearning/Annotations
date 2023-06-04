@@ -1,0 +1,9 @@
+Dropout layers or early stopping on the model to prevent Overfitting.
+
+
+
+Dagemaker could be acessed throught Sage maker notebok, which is an instance of EC2
+
+
+
+TF/IDF measures the word relevancy in a text collection

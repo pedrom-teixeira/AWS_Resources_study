@@ -1,9 +1,2 @@
-Resource Group:
-
-Amazon Recognition:
-
-AWS Glue:
-
-AWS Polly:
 
 
