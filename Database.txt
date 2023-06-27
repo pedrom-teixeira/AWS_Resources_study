@@ -35,6 +35,8 @@ RedShift:
   - high-performance storage, and massively parallel query execution
   - RedShift Spectrum can query on S3 buckets
   - OLAP store
+  - COPY command is much more efficient than INSERT
+  - UNLOAD commands writes the query result to texts files in S3
  
 DMS (Database Migration Service):
   - Migration existing database into AWS

@@ -18,7 +18,7 @@ Seaborn: pretty charts and graphs
     - Jointplot combine the scatter plot with histograms on each axis
 
 Scikit-learn:
-    - Focus on ML algoriths and models such as regrassion, neural network, classifications...
+    - Focus on ML algoriths and models such as regression, neural network, classifications...
     - Can provide some pre-processing functions and methods
 
 Data Types:
@@ -28,8 +28,8 @@ Data Types:
 
 
 Data distribuition:
-    - Normal distribuition(Gauss distribution)
-    - Probability Mass Function seems like normal distribution but for discrete values
-    - Poisson distribution wokrs with discrete data
+    - Normal distribuition(Gauss distribution) showing that data near the mean are more frequent in occurrence than data far from the mean. Used for probability of a given range occur
+    - Probability Mass Function seems like normal distribution but for discrete values.
+    - Poisson distribution wokrs with discrete data. Used to show how many times an event is likely to occur over a specified period.
     - Binomial distributions discrete distribution, used for binari data like negative or positive, true or false
-    - Bernoulli distribution, is a especial case on binomial but just a single trial
+    - Bernoulli distribution, is a especial case on binomial but just a single trial. For example, the probability of getting a heads (a “success”) while flipping a coin is 0.5.

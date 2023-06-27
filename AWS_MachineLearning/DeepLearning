@@ -98,10 +98,12 @@ Confusing matrix interpretations:
     True Negative/(True negative + False positives)
 
     - F1 Score when you care about precision and recall, balances two, in other words, when you care about errors classification of your NN
-    2TP/(2TP+FP+FN)
+    2TP/(2TP+FP+FN) or 2*(Precision*recall/Precision+recall)
 
 
     - RMSE used when you care about right and wrong answers
+
+    - PR AUC: 
         
 }
 

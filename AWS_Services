@@ -189,3 +189,7 @@ AWS Organizations:
   AWS Step Fuction:
     - Can orchestrate Machine learning flow
     - Multiple possibilities to orchestrate
+
+
+  AWS Elastic Inference:
+    - Can speed up the throughput and decrease the latency of getting real-time inferences from your deep learning models that are deployed as Amazon SageMaker

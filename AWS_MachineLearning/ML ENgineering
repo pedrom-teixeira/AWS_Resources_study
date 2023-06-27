@@ -8,7 +8,7 @@ Missing Data:
     - To outliers value treatment, a median imputation. It's not the better choice and it's works only in column level, ignoring correlations.
     - It could be excluded is there aren't many NA data ! Caution to do not bias your data droppping missing values. An option it's to subtitute to a similar field
     - KNN uses machinelearning itself to fill missingdata. It assumes only numerical data.
-    - Deep Learning to impute data. Works wll for categorical but it's complicated
+    - Deep Learning to impute data. Works well for categorical but it's complicated
     - Regression to find relationships between the missing feature and others
     - MICE is one of the best  techniques to input missing data (advanced)
     - Other good option is collect more data

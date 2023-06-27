@@ -2,8 +2,30 @@ Dropout layers or early stopping on the model to prevent Overfitting.
 
 
 
-Dagemaker could be acessed throught Sage maker notebok, which is an instance of EC2
+Sagemaker could be acessed throught Sage maker notebok, which is an instance of EC2
 
 
 
 TF/IDF measures the word relevancy in a text collection
+
+
+
+
+Cases of IA fitting:
+    - For high accuracy on training but low accuracy for test:
+        Create aditional sample data for minority class if dataset is unbalanced(might add some noise to this data)
+        Change cost function
+
+    - For training and validation error are high (underfitting):
+        Add new features
+        Decrease regularization
+        Increase the amount of training data examples.
+        Increase the number of passes on the existing training data.
+
+    - For high accuracy on training but low accuracy for test (overfitting):
+        Decrease number of features
+        Increase the amount of regularization used
+        Add more training dataset
+        Use less features
+
+    

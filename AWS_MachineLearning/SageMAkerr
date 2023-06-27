@@ -1,11 +1,16 @@
+     Amazon SageMaker requires that a CSV file does not have a header record and that the target variable is in the first column.
+    
     SageMaker Ground Truth:
         - Labeling images
         - Reduce labeling jobs
+
+        
 
 
     Linear Learner:
         - Linear regression 
         - Can handle regression numeric and classification (Binary or multiclass)
+        - Supervisioned
 
         Iput format:
             - RecordIO-wrapped protobuf (float32 only)
@@ -15,6 +20,7 @@
 
         How use it:
             - Preprocessing when data must be normalized or input data should be shuffled
+            - Shuffling helps the training converge fast, prevents any bias during the training and prevents the model from learning the order of the training
             - Training using stochastic gradient, choose the better one optimization algorithm, multiple model are optimized in parallel and offers L1 and L2 regularization
             
         Instances types:
@@ -23,6 +29,10 @@
 
     XGBoost:
         - It's a boosted group of decision trees
+        - supervisioned
+        - User for regression, classification and ranking
+        - Use XGBoost as a framework to run your customized training scripts that can incorporate additional data processing into your training jobs
+        - CAN BE USED AS A FRAMEWORK
 
         Input format:
             - CSV
@@ -50,6 +60,7 @@
         - Commomly used as translate algorithm or also used to text summarization.
         - USe tokens (numbers) as input to represent the words, as mentioned
         - Can be implemented by RNNs or CNN
+        - Supervisioned
 
         Inpunt Format:
             - recordIO-protobuf as tokenized text files
@@ -69,6 +80,366 @@
 
 
     DeepAR:
-        - Forecasting  one-dimentional time series data like a sequence of datapoint over time and predict the future behavior
-        - Can train severals time series at on
+        - Supervisioned
+        - Use RNN
+        - Forecasting one-dimentional time series data like a sequence of datapoint over time and predict the future behavior
+        - Can train severals time series at once
+        - Finds frequency and  seasonality
+        - Precidtion of new produts sales
+
+        Input format:
+            - Json (Gzip or parquet)
+            - Each record must have a starting time stamp and the target, which is a list of time series
+
+        Hyperparameter:
+            - Epochs
+            - Batchsize
+            - Learning rate
+            - Num cells
+
+        Instances Types:
+            - Can use GPU or CPU
+            - Move to GPU onlye if necessary, like for large models or batch sizes
+            - Single or multiple machine
+
+    BlazingText:
+        - Used for text classification, useful for websearching
+        - Preview labels for given sentence
+        - Just for sentences, not for documents
+        - Supervisioned
+        - Word2vec creates a vector representations of WORDS, useful for other natural processing algorithms like machine translation or sentiment analysis
+        - Word2vec has multiple modes, cbow, skip-gram, batch skip-gram witch is distributed over many CPUs nudes
+
+        Input format:
+            - For supervisioned model, one sentence per line, and should be like:
+                __label__2 bla bla bla , bla
+            - Algumented manifest text format ismore structured and follows like:
+                {"source":"bla bla bla , bla","label":1}
+
+        Hyperparameters:
+            - Word2vec:
+                - Finds word similar to each other
+                - Used on other NLP algorithm
+                - Mode
+                - Learning_rate
+                - Window_size
+                - Vector_dim
+                - Negative_samples
+            - Text classification:
+                - Useful for websearching
+                - Epochs
+                - Learning_rate
+                - Word_ngram
+                - Vector_dim
+
+        Instances types:
+            - For cbow and skipgram, only single CPU or GPU instance
+            - For batch_skipgram can use single or multiple CPU instances
+
+
+    Object2vec:
+        - Operate similar to blazing but over all document
+
+        Input format:
+            - Data must be tokenized
+            - Consists in pair of tokens and sequence of tokens
+
+        Hyperparameters:
+            - Dropout, early stopping, epochs, learning_rate, batchsize, layers, activation function, optimizer and  weight decay
+
+        Instances types:
+            - Can train only in single machine (CPU or GPU, Multi GPU)
+
+
+    Object Detection (SageMaker):
+        - Identify all of objects in an imagewith bounding boxes
+        - Detects using a single deep neural network
+        - Supervisioned
+        - Classes are accompained by confidence scores
+        - Can train from scratch or use pre-treined models, based on ImageNet
+        - Used throught two variants,  TensorFlow or MXNet
+        - Takes images as input and outputs all instances of objects in the image with categories and confidence scores
+    
+        Input Format:
+            - Recordio or Image(JPG or PNG)
+
+        Hyperparameters:
+            - Mini_batchsize
+            - Learning_rate
+            - Optimizer, adam, SGD, rmsprop, adadelta
+
+        Instances types:
+            - Use GPU instances for training (Multi GPU and mult machine)
+            - Use CPU or GPU for inference
+
+    Image classification:
+        - Similar to object detection, but only gives you the labels in the image, not position
+
+        Hyperparameters:
+            - Batch size
+            - Learning rate
+            - optmizer
+
+        Instance Type:
+            - GPU and multi GPU and Multi-machine GPU
+            - CPU and GPU for inference
+
+    Semantic Segmentation:
+        - Similar to Object detection but goes to the pixel level
+        - Some aplication like self-driving vehicles
+        - Produces a mask segmentation
+
+        Input format:
+            - JPG and PNG for training and validation
+            - JPG for inference
         
+        Hyperparameter:
+            - Epochs
+            - Learning rate
+            - batch size
+            - Optimizer
+            - Algorthm
+            - Back bone
+
+        Instance type:
+            - Only GPU supported to training on single machine
+            - Inference supports CPU or GPU
+
+
+    Random cut forest:
+        - Algorithm for anomaly detection
+        - Detects spikes ins times series data
+        - Assing an anomaly score to each data point
+        - Unsupervisioned training
+        - Can work in streaming data
+
+        Input format:
+            - Recordio
+            - Protobuf
+            - CSV
+
+        Hyperparameters:
+            - num_trees
+            - num_samples_per_tree
+
+        Instances types:
+            - 
+
+
+    Neural Topic Model:
+        - Organize document in topics
+        - Classify and summarize documents
+        - It's not just TF/IDF
+        - Unsupervisioned
+
+        Input Format:
+            - Four channels required, train, validation, test and auxiliary
+            - Recodio-protobuf or CSV
+            - Must tokenize into integers
+            - File or pipe mode
+
+        Hyperparameters:
+            - Mini-batch-size
+            - Learning-rate
+            - Num_topics
+
+        Instance types:
+            - GPU or CPU
+            - Recommended GPU but CPU is ok for inference
+
+
+    LDA:
+        - Not based on deep learning
+        - It's unsupervisioned
+        - Most use for topic modeling and documents
+    Input format:
+        - Train channel, optional test channel
+        - Recodio-protobuf
+        - CSV
+        - Need to tokenize data first
+        - Pipe mode only for recordio
+
+    Hyperparameters:
+        - Num_topics
+        - Alpha0
+
+    Instances types:
+        - Single-instance CPU training
+
+    KNN:
+        - Simple classification or regression
+
+        Input Format:
+            - Train channel
+            - Test channel emit acuracy or MSE
+            - recordio-protobuf or CSV for training
+            - File or pipe mode
+
+        Hyperparameters:
+            - K
+            - Sample_size
+
+        Instances Types:
+            - CPU or GPU for training
+            - Inference
+
+
+    K-means:
+        - Unsupervisioned clustering
+        - Divide  data into K grups
+        - Web-scalek-means clustering
+
+        Input format:
+            - Train channel
+            - test as opitional channel
+            - recordio-protobuf or CSV
+            - File or pipe mode
+
+        Hyperparameters:    
+        - K
+        - Mini batch size
+        - Extra_center_factor
+        - Init_method
+
+    PCA:
+        - Find the principle dimensions (features) from your data
+        - Principal components analysis
+        - Unsupervisioned
+        - Randomized mode is used for large number of observations and features
+        - Regular mode used for sparse data and moderate features
+
+        Input format:
+            - recordio-protobuf or CSV
+            - File or pipe mode
+
+        Hyperparameters:
+            - Algorithm mode
+            - Subtract_mean
+
+        Instances types:
+            - GPU or CPU
+
+
+
+        
+    Factorization Machines:
+        - Classification and regression with sparse data
+        - Like click prediction
+        - Used when we have small bunch of data and we need to inference for that case
+        - Supervisioned
+        - Limited to pair-wise interaction (two dimentional matrix)
+
+        Input format:
+            - recordio-protobuf with float32
+            - File or pipe mode
+
+        Hyperparameters:
+            - Initialization methods for bias, factors and linear terms
+
+        Instances types:
+            - CPU or GPU 
+            - Recommended CPU
+            - For huge data, recommeded GPU
+
+    IP Insights:
+        - Used as a security tool
+        - Find suspecius behavior from IP adresses
+        - Unsupervisioned
+
+        Input format:
+            - User Names
+            - Account ID
+            - No need pre-processing
+            - Has tranning channel and opitional validation channel
+            - CSV data entity,IP
+
+        Hyperparameters:
+            - Num_entity_vectors
+            - Vector_dim
+            - Epochs
+            - learning rate
+
+        Instances types:
+            - GPU or CPU
+            - Can use multiples GPUs
+
+
+
+    Reinforced Learning:
+        - Learning in a virtual environment (online)
+
+        Input format:
+            - recordio-protobuf or CSV
+            - File or pipe mode
+
+        Hyperparameters:
+            -
+
+        Instances types:
+            -
+
+
+    Automatic Model Tunning:
+        - Is a Sage Maker functionality which helps to tunning de hyperparameters from yout model
+        - Save time, executing severals but performed trainings, based on the given information
+
+    Apache Spark:
+        - Spark runs on Sage maker notebooks
+        - Instead os using Sparks MLib, use Sagemaker-spark lib
+        - Combines the power of pre-prossessing big datasets of spark with creates model/inferences os Sagemaker
+
+    SageMaker Studio:
+        - Is a visual IDE for ML
+        - Creates and share to jupyter notebooks
+
+    SageMaker Debbuger:
+        - Save internal model state at periodical intervals
+        - Allows to see what's going on during the training
+        - Supports another algorithms and frameworks as Pytorch, TensorFlow...
+        - Built in notifications as SMS or E-mail and StopTraning action
+
+    SageMaker Autopilot:
+        - Automaticaly figer-out whta the right algorithm or model to made predictions based on  your data
+
+    SageMaker Model Monitor:
+        - Get automatically alerts on quality deviation on deployed models
+        - Model might get worse or better while real world data coming changing over time
+        - Works trhough CloudWatch
+        - Detects anomalies and outliers
+        - No codes needed
+        - Clarify detec a bias
+
+    Sagamaker Safeguard:
+        - Ensure that when deploying a nel model, bad things do not happen
+        - If happen, allows you to catch them quickly
+        - Autorollsback
+        - Control shifting traffic to new models
+
+    SageMaker JumpStart:
+        - One click algorithms and models from  zoos
+    Sage Maker Data Wrangler:   
+        - Import, transform, analyze, export data ALL WITHIN SageMaker Studio
+    Sage Maker Feature store:
+        - Find, discover and  share features in Studio
+    Sage Maker Edge Maker:
+        - For Edge devices
+        - Abtract the SageMaker Neo
+    Asynchronous Inference endpoints:
+        - Allows to have  a non-realtime inference endpoint
+        - When you need a prediction, but you can wait for answer
+
+    SageMaker Canvas:
+        - Used more for business-analyst
+        - It's a no-code machine learning
+        - Classification and regression
+        - Clean your data (missing, outliers and duplicates)
+
+
+    Pre-training Bias Metrics:
+        - Class Inbalance: Do not have enough data from an feature which is correlated to a demographic  group. CI it's a metric which measures this behavior
+        - Diference in Proportions of Labels(DPL): Imbalance of positive outcomes between facet values. Similar to CI but through a group label
+        - Kull-back Leibler Divergence (KL): How much outcome ditribuitions of facet diverges
+        - LP-norm (LP): P-norm difference between ditribuitions of outcomes from facets
+        - Total Variation Distance (TVD): L1-norm difference  between distribuitions of outcomes  from facets
+        - Kolmogorov Smirnof: Maximum divergence between outcomes  in distribuitions from facets
+        - Conditional Demographic disparity (CDD): Disparity of outcomes  between facets as whole, and by subgroups 
