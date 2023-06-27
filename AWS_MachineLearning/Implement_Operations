@@ -1,0 +1,83 @@
+
+
+
+SageMaker Security:
+     - Use IAM  to set up  user accounts only the permissions they need
+     - Use MFA
+     - Use SSL/TLS when conecting to anything. Only in EMR it can be done.
+     - Use CloudTrail to log API and user activity
+     - Use encryption
+     - Be careful with PII(sensive informations) in rest and in transit:
+          - At rest can use KMS. Sagemaker jobs or notebooks will accept KMS to encript all data stored. Everything in docker container can be encrypted with KMS
+          - In transit use SSL and TLS, can assing IAM roles to resources and in some cases of inter-node training may be encrypted(inter-conteiner traffic encryption)
+          - S3 supports various kinds of encryption an rest and transit.
+
+     
+SM VPC:
+     - Our training job runs within a VPC. In case we need extra security, we can set up the job in a private VPC during launching the training job. 
+     It creates some problem to connect S3 to the model. To overcome this issue, we must configure an S3 VPC endpoint and we still can ensure data with
+     costum ednpint policies and S3 bucket polices
+
+     - Nootebook by default, can access internet. We can disable that when creating the notebook. Similar to issue above, we must set up and endpoint calles as PrivateLink or
+     a NAT Gateway
+
+     - Inference and training cointainers is connected to internet by defoult. Similar to above, we lose S3 connection. 
+
+SM IAM:
+     - User permissions:
+          - CreateTrainingJob
+          - CreateModel
+          - CreateEndpointConfig
+          - CreateTransformJob
+          - CreateHyperParameterTuningJob
+          - CreateNotebookInstance
+          - UpdateNotebookInstance
+     - Predefined Policies:
+          - AmazonSageMakerReadOnly
+          - AmazonSageMakerFullAcess
+          - AmazonSageMakerAWSAcess
+          - DataScientist
+
+SM logging and monitoring:
+     - CloudWatch can Monitor, log and  alarm on this
+     - CloudTrail records actions from users, roles, and services
+
+
+Elastic Inference:
+     - Acelerates the deep learing algorithms inference stage
+     - Set up within a CPU instance with similar performace of GPU, for a fraction of cost
+     - Only works with DEEP LEARNING (TENSOR FLOW OR MXNET) PRE BUILD CONTAINERS
+
+Automatic Scalling:
+     - Dynamically adjust number of instances for a production variant
+     - Load test your configuration before using it
+
+Availability zones:
+     - Attomatic try to distribute instances across availability zones
+
+
+Serveless Inference:
+     - Good for infrequet and  unpredictable traffic, scale up and down when needed
+     - Charged based on use
+     - Monitor via CloudWatch
+
+SM Inference Recommender:
+     - Recommends best instance and configuration for models
+     - Automates test and loading model tuning
+     - Deploys to optimal inference endpoint
+     - What king of instances for your inference endpoint
+
+SM Inference Pipeline:
+     - Allows to use more than one container
+     - Can have any combination of pre-treined built-in algorithm
+     - Like to combine preprocessing, predictions and post-processing in different containers, chained together
+     - Spark ML(through glue or EMR) or scikit-learn
+     - For real-time inference and batch transform
+
+MLops SM:
+     - 
+
+
+
+
+

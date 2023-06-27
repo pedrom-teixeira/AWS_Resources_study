@@ -95,9 +95,38 @@ AWS System Manager:
   
   
 AWS EMR:
- - Cloud big data platform for processing vast amounts of data using open source tools such as Hadoop, 
- Apache Spark, Apache Hive, Apache HBase, Apache Flink, Apache Hudi, and Presto.
- -  Amazon EMR can be used to provision resources to run big data workloads on Hadoop clusters
+      - Cloud big data platform for processing vast amounts of data using open source tools such as Hadoop, 
+      Apache Spark, Apache Hive, Apache HBase, Apache Flink, Apache Hudi, and Presto.
+      -  Amazon EMR can be used to provision resources to run big data workloads on Hadoop clusters
+      - Managed Hadoop framework on EC2 instances
+      - EMR notebooks  
+      - A cluster is a collections of EC2 instances and each instance is called a node
+      - Each node had  anode type role:
+        - Master node manage (single EC2 instance)
+        - Core Node hosts HDFS data and run tasks
+        - Task node only runs tasks 
+        Ways to use:
+          - Trasient cluster is configured to be termined once all steps defined have been completed
+          - Long running clusters is manually terminated
+        Integration:
+          - EC2 instances include the nodes inthe cluster
+          - VPC to configura the virtuall network in which you launch instance
+          - S3 to store input and output (like instead of HDFS)
+          - CloudWatch to monitor cluster performance and configure alarms
+          - CloudTrail to audit requests
+          - Datapipeline to schedule and start your clusters
+
+      - Hdfs is the default storage of EMR 
+      - When you shutdown the cluster, the data goes with it
+      - An alternative for HDFS, is EMRFS which use S3 as though it were HDFS
+      - Charges by hour plus the EC2 instances
+        Spark Components:
+          - Spark Streamming: Tables keep growing as new group of data came. Quering in real time. Can be integrated with Kinesis  
+          - Spark SQL
+          - MLLib: Classification, decision trees, Kmeans clustering, Topic  modeling, ML workflow utilities 
+          - GraphX
+
+        
  
  
 AWS Pinpoint:
@@ -160,3 +189,7 @@ AWS Organizations:
   AWS Step Fuction:
     - Can orchestrate Machine learning flow
     - Multiple possibilities to orchestrate
+
+
+  AWS Elastic Inference:
+    - Can speed up the throughput and decrease the latency of getting real-time inferences from your deep learning models that are deployed as Amazon SageMaker

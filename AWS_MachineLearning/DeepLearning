@@ -1,0 +1,117 @@
+Function Activation:
+    - It's the function inside pf a given node or neuron, wich sums all of the incoming inputs into it and decides the output to next layer
+
+    - LINEAR does not do any transformation. Output whatever it got on input
+    - BINARY if nothing is coming in, output nothing but if anything is coming in, output a positive value (ON/OFF). Can't handle any mutiple classification
+    - SIGMOID(LOGISTC) nice and smooth, scale output between 0 and 1. Changing slowly for high or low values. Computationally expensive
+    - TANH(HYPERBOLIC TANGENT) nice and smooth, scale output between -1 and 1. Changing slowly for high or low values. Preferred over sigmoid. Computationally expensive
+    - Relu (Retified liniar unit), easy and fast to compute, there is no calculus problem
+    - Leaky relu (PreLu)
+    - Softmax is used on the final layer of a multiple classification problem. Converts outputs to probabilities of each classification
+
+Choosing an activation function:
+    - SOFT MAX for multiple calssification
+    - Recurrent network work well with Tanh
+    - For the others, try to start with Relu, after LeakyRelu, after Prelu and finally Swish
+
+
+Convolutional Networks:
+{
+    - Usually used in image context analisys
+    - It's scan your data, looking for some feature which maight not might not be exactly where you expected them to be (feature-location invariant)
+    - Example: Find and STOP plate in a street image
+
+    - Takes an imagem data, break in little chanks called convolutions and assamble those and look for patterns at increasingly hihigher complexities.
+    
+    Building and CNN:
+        - Confirm that data has the apropriate shape
+        - Some Keras layers like counv2d for 2D image and MaxPooling2D used to reduce the process load
+        - Typical  usage is Conv2D -> MaxPooling2D -> Dropout -> Flatten -> Dense -> Dropout -> Softmax
+        - Very intese load to CPU, GPU and RAM
+        - Many Hyperparameters
+
+}
+Recurrent Networks:
+{
+    - Commonly used to data sequence time data, like to predict the future behavior over time
+    - The sequence does not have to just be in time
+    - The past result influences the future behabior of neuron
+
+    Combinations:
+        - Sequence to sequence: Where the input is a time series or sequence data, we can also have an output that is a time series or sequence data
+        - Sequence to vector/Vector to sequence : 
+        - Encoder -> Decoder:
+
+    - You not only need to backpropagate through the network topology, you also need to backpropagate through all the times steps
+    - LSTM Cell is a way to memorize all steps from the begining data-ro, not only the last.
+    - GRU cell is a siplified LSTM 
+}
+
+Modern NLP:
+{
+    BERT:
+        - Transformed based on natural language processing model, like a big neural networking
+        - To training, do not just need feed words, instead of it, we need to tokenize this words in numeric representation
+
+    GPT:
+        - Generative Pre-trained Transformer
+
+    Transfer Learning:
+        - Used to re-use trained models, tune them for our own use
+        - Continue training a pre-trained model
+        - Add new trainable çayers to the top of a frozen model
+        - Retrain from scratch
+        - Use it as-is
+}
+
+Regularization Techniques:
+{ 
+    - Intended to prevent overfitting
+    - Dropout is removing random and agressive like 50% of each training pass. It's force your model to spread it's leaning out
+    - Early Stopping prevent to execute more epoch than is necessary
+
+    - L1 does feature selection
+    - L2 keeps all features, but weights them all differently
+}
+
+Vanishing problem:
+{
+    - When the loss function gradient is about very small values.
+    - Multi-level hierarchy splits your NN in severals layers and train separatly each level
+    - LSTM 
+    - Residual Network as ResNet or Ensemble of shorter networks
+    - Choose a better activations function as Relu
+
+}
+
+
+
+Confusing matrix interpretations:
+{
+    - Recall: Measure the percent of rights true positives precision, used to evaluate when the false negatives precision it's what matters, like fraud detection
+        True Positives/(True positives + False Negatives)
+
+    - Precision: Measure the percent of rights true positives from total right predicts, used to evaluate when the false positive it's what matters, like drug testing
+        True Positives/(True positives + False positives)
+
+    - Specificity: Measure true negative rate
+    True Negative/(True negative + False positives)
+
+    - F1 Score when you care about precision and recall, balances two, in other words, when you care about errors classification of your NN
+    2TP/(2TP+FP+FN) or 2*(Precision*recall/Precision+recall)
+
+
+    - RMSE used when you care about right and wrong answers
+
+    - PR AUC: 
+        
+}
+
+Emsemble Learning:
+{
+    - Bagging: Create different models with different training sets. It allows to execute parallel training. More robust then a single model. IS  good way to avoid overfitting and easier to parallelize
+
+
+    - Boosting: It's similar to weighted average, where each observation from model has a weight. The flow is training using equal weights, reweighting the data and re-run the model with new weights. If you care about accuracy, use it. XGBoost
+
+}

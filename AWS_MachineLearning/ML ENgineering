@@ -1,0 +1,49 @@
+Feature:
+    - Is what i know about my data and it will be used to the training model
+    - Too many features is problematic. It's harder to find the optimal solution
+    - Ones of MAchine learning jobs is to choose the best features
+
+Missing Data:
+    - Replace the missing values with the mean value from the rest of the column.
+    - To outliers value treatment, a median imputation. It's not the better choice and it's works only in column level, ignoring correlations.
+    - It could be excluded is there aren't many NA data ! Caution to do not bias your data droppping missing values. An option it's to subtitute to a similar field
+    - KNN uses machinelearning itself to fill missingdata. It assumes only numerical data.
+    - Deep Learning to impute data. Works well for categorical but it's complicated
+    - Regression to find relationships between the missing feature and others
+    - MICE is one of the best  techniques to input missing data (advanced)
+    - Other good option is collect more data
+
+Unbalance data (quantity):
+    - Oversampling data of minority class, coping this cases
+    - Undersampling, removing de maiority cases. Just can be use to avoid scalling hardware. Is not the better approach
+    - Smote (synthetic monority oversampling). It' generates artificials samples of minority classes using KNN
+    - Adjusting threshlhold of sample sorting when generating the sample.
+
+
+Outliers:
+    - Variance measures how spread-ou the data is. Calculates as the average of the squared differenfes between values and the mean
+    - STD Deviation calculated as squared root of variance. Identifies outliers like "F is two standard deviations away from the mean"
+    - Outliers can be identified using std deviation. Outside od two std deviations can be considered outliers
+    - AWS Random cut forest can be find on Quicksight, Kinesis, Sagemaker... It's a tool to detect outliers
+
+Binning:
+    - The ideia it's to transform numerical data to categorical by binning the values together based on ranges
+    Why?
+        - Sometimes the measurement aren't exacly precise. It's a way to covering up imprecision in measurements
+        - If it's convenient to use categorical data instead numerical
+        - Quantile bin puts the same number os samples in each bin
+
+Transforming:
+    - It's applying some function to a feature to make t better suited for training
+    - The model do not have a good behavior with nonlnear functions
+
+Encoding:
+    - Used when the model requires a very specific kind of input
+    - One-hot encoding create a bucket for every category
+
+Scalling/Normalization:
+    - Lot of models prefer their features were sitributed around zero
+    - Recommended including throght features
+
+Shuffling:
+    - Algorithms are presentee when shiffling the traning data
